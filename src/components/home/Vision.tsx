@@ -8,7 +8,7 @@ export default function Vision() {
           <div className="relative">
             <div className="aspect-[4/5] bg-surface rounded-3xl overflow-hidden border border-black/5">
               <img 
-                src="https://images.unsplash.com/photo-1562654501-a0ccc0af3ff1?auto=format&fit=crop&q=80&w=1000" 
+                src="/vision-thumbnail.png" 
                 alt="Printing Process"
                 className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
               />
