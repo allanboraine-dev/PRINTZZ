@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import visionThumbnail from "../../assets/vision-thumbnail.png";
 
 export default function Vision() {
   return (
@@ -6,9 +7,9 @@ export default function Vision() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-20 items-center">
           <div className="relative">
-            <div className="aspect-[4/5] bg-surface rounded-3xl overflow-hidden border border-black/5">
+            <div className="aspect-square bg-surface rounded-3xl overflow-hidden border border-black/5">
               <img 
-                src="/vision-thumbnail.png" 
+                src={visionThumbnail} 
                 alt="Printing Process"
                 className="w-full h-full object-cover transition-transform duration-1000 hover:scale-105"
               />

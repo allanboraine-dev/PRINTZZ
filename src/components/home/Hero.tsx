@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles, Image as ImageIcon } from "lucide-react";
+import heroThumbnail from "../../assets/hero-thumbnail.png";
 
 export default function Hero() {
   return (
@@ -90,7 +91,10 @@ export default function Hero() {
               
               {/* Dynamic Image Wrapper */}
               <div className="absolute inset-2 rounded-[2rem] overflow-hidden bg-gray-100">
-                <div className="absolute inset-0 bg-[url('/hero-thumbnail.png')] bg-cover bg-center hover:scale-105 transition-transform duration-1000" />
+                <div 
+                  className="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-1000" 
+                  style={{ backgroundImage: `url(${heroThumbnail})` }}
+                />
                 {/* Subtle gradient overlay to ensure text legibility if needed, but we keep it bright */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-80" />
               </div>
